@@ -58,6 +58,8 @@ blob_fixups: blob_fixups_user_type = {
         .apktool_patch('blob-patches/LPPeService'),
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
+    'vendor/etc/gnss/agps_profiles_conf2.xml': blob_fixup()
+        .regex_replace(r'(aosp_pos_mode_enable|aosp_profile_enable|bind_nlp_setting_to_supl)="false"', r'\1="true"'),
     'vendor/bin/mnld': blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
         .replace_needed('libmnl.so', 'libmnl_mtk.so'),
