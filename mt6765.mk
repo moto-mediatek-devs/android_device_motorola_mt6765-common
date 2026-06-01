@@ -38,6 +38,11 @@ PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
 
+# Boot
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.mediatek \
+    android.hardware.boot-service.mediatek_recovery
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
