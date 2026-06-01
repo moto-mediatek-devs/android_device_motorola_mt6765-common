@@ -10,6 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.mt6765 \
+    fstab.mt6765.ramdisk \
+    fstab.mt6762 \
+    fstab.mt6762.ramdisk
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

@@ -1,0 +1,19 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "fstab.mt6765",
+    src: "fstab.mt6765",
+    vendor: true,
+    ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "fstab.mt6762",
+    src: "fstab.mt6765",
+    filename: "fstab.mt6762",
+    vendor: true,
+    ramdisk_available: true,
+}

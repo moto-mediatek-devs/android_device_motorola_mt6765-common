@@ -47,5 +47,8 @@ BOARD_MKBOOTIMG_ARGS += --board ""
 TARGET_BOARD_PLATFORM := mt6765
 BOARD_HAS_MTK_HARDWARE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.mt6765
+
 # Inherit the proprietary files
 include vendor/motorola/mt6765-common/BoardConfigVendor.mk
