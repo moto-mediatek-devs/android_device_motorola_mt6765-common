@@ -43,5 +43,9 @@ BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --board ""
 
+# Platform
+TARGET_BOARD_PLATFORM := mt6765
+BOARD_HAS_MTK_HARDWARE := true
+
 # Inherit the proprietary files
 include vendor/motorola/mt6765-common/BoardConfigVendor.mk
