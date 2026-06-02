@@ -96,6 +96,9 @@ ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_tee_gp_support=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# RAM
+ro.config.low_ram=true
+
 # RIL
 keyguard.no_require_sim=true
 persist.radio.sar_sensor=1
