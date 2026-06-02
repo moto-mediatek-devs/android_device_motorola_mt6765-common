@@ -63,7 +63,8 @@ PRODUCT_PACKAGES += \
     fstab.mt6765 \
     fstab.mt6765.ramdisk \
     fstab.mt6762 \
-    fstab.mt6762.ramdisk
+    fstab.mt6762.ramdisk \
+    ueventd.mt6765.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6765.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6765.rc \
