@@ -19,6 +19,20 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6765.rc",
+    src: "init.mt6765.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6762.rc",
+    src: "init.mt6762.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "ueventd.mt6765.rc",
     filename: "ueventd.rc",
     src: "ueventd.mt6765.rc",
