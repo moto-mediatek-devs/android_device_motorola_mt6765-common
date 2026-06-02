@@ -11,5 +11,32 @@ on late-fs
     mount_all /vendor/etc/fstab.mt6765 --late
 
 on post-fs-data
+    # Display
+    chmod 0664 /dev/graphics/fb0
+    chown system graphics /dev/graphics/fb0
+
+    chmod 0664 /dev/mtk_disp_mgr
+    chown system graphics /dev/mtk_disp_mgr
+
+    chmod 0444 /dev/mtk_disp
+
+    chmod 0660 /dev/mtkfb_vsync
+    chown system graphics /dev/mtkfb_vsync
+
+    chmod 0640 /dev/mdp_sync
+    chown system system /dev/mdp_sync
+
+    chmod 0660 /dev/sw_sync
+    chown system graphics /dev/sw_sync
+
+    chmod 0640 /dev/mtk_cmdq
+    chown system system /dev/mtk_cmdq
+
+    chmod 0640 /proc/m4u
+    chown system media /proc/m4u
+
+    chown system graphics /proc/mtk_jpeg
+    chmod 0660 /proc/mtk_jpeg
+
     # Finish the post-fs-data phase.
     setprop vold.post_fs_data_done 1
