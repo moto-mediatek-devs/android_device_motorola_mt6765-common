@@ -46,6 +46,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.mediatek \
     android.hardware.boot-service.mediatek_recovery
 
+# Chipinfo
+PRODUCT_PACKAGES += \
+    chipinfo
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
