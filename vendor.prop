@@ -60,3 +60,6 @@ ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 debug.sf.region_sampling_period_ns=1000000000
+
+# USB
+vendor.usb.controller=musb-hdrc
