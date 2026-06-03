@@ -226,6 +226,11 @@ vendor/firmware/rgx.sh
 vendor/lib/mt6765/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
 vendor/lib64/mt6765/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 
+# Fuelgauge
+vendor/bin/fuelgauged
+vendor/etc/init/fuelgauged_init.rc
+vendor/lib/libfgauge_gm30.so
+
 # ION
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so

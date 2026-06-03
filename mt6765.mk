@@ -112,6 +112,7 @@ PRODUCT_PACKAGES += \
     fstab.mt6762.ramdisk \
     init.mt6762.rc \
     init.mt6765.rc \
+    init.mt6765.charger.rc \
     ueventd.mt6765.rc
 
 PRODUCT_COPY_FILES += \

@@ -1,3 +1,5 @@
+import /vendor/etc/init/hw/init.mt6765.charger.rc
+
 # We need vold early for metadata encryption
 on early-fs
     start vold
