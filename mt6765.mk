@@ -85,5 +85,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
 
+# SPL
+VENDOR_SECURITY_PATCH := 2023-12-01
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/mt6765-common/mt6765-common-vendor.mk)
