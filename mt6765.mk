@@ -110,6 +110,7 @@ PRODUCT_PACKAGES += \
     fstab.mt6765.ramdisk \
     fstab.mt6762 \
     fstab.mt6762.ramdisk \
+    fstab.zram \
     init.mt6762.rc \
     init.mt6765.rc \
     init.mt6765.charger.rc \

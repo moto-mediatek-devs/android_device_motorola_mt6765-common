@@ -70,6 +70,8 @@ on property:sys.boot_completed=1
     write /sys/block/dm-4/queue/read_ahead_kb 128
     write /sys/block/dm-5/queue/read_ahead_kb 128
 
+    trigger sys-boot-completed-set
+
     write /proc/sys/kernel/sched_migration_cost_ns 200000
 
     # restore boot perf. tune
@@ -106,6 +108,16 @@ on property:sys.boot_completed=1
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
+
+# Enable zram only once per boot. From:
+
+# We want one opportunity per boot to enable zram, so we
+# use a trigger we fire from the above stanza. If
+# persist.sys.zram_enabled becomes true after boot,
+# we don't want to run swapon_all at that time.
+
+on sys-boot-completed-set && property:persist.sys.zram_enabled=1
+    swapon_all /vendor/etc/fstab.zram
 
 service vendor.gralloc-4-0 /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
     class hal animation

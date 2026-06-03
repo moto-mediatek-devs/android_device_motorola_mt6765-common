@@ -63,3 +63,6 @@ debug.sf.region_sampling_period_ns=1000000000
 
 # USB
 vendor.usb.controller=musb-hdrc
+
+# ZRAM
+persist.sys.zram_enabled=1

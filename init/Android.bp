@@ -11,6 +11,12 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "fstab.zram",
+    src: "fstab.zram",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.mt6762",
     src: "fstab.mt6765",
     filename: "fstab.mt6762",
