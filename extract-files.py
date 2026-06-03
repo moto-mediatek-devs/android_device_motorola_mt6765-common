@@ -44,6 +44,7 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.12-impl.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/hw/vulkan.mt6765.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_acquire')
@@ -54,6 +55,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_release'),
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
+    'vendor/lib/librt_extamp_intf.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
