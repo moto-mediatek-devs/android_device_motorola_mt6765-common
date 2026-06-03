@@ -1,3 +1,8 @@
+# Audio
+ro.audio.usb.period_us=16000
+ro.vendor.mtk_audio_tuning_tool_ver=V2.2
+ro.vendor.mtk_besloudness_support=1
+
 # Display
 ro.hardware.egl=meow
 ro.opengles.version=196610
