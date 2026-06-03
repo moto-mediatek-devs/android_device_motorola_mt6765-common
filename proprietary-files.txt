@@ -256,3 +256,10 @@ vendor/lib64/libnvram.so
 # NVRAM (Customisation)
 vendor/lib/libcustom_nvram.so;DUMMY_SHARED_LIB
 vendor/lib64/libcustom_nvram.so;DUMMY_SHARED_LIB
+
+# TEE
+vendor/bin/mcDriverDaemon
+vendor/etc/init/tee.rc
+vendor/etc/init/trustonic.rc
+vendor/lib64/libMcClient.so
+vendor/lib64/libMcRegistry.so
