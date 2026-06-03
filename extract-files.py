@@ -44,7 +44,14 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.12-impl.so': blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v32.so')
+        .replace_needed('libutils.so', 'libutils-v32.so'),
+    'vendor/lib64/hw/vulkan.mt6765.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_acquire')
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_createFromHandle')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_release'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
