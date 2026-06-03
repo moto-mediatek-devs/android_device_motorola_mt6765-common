@@ -1,5 +1,9 @@
 # Unpinned blobs from XT2165-5_TONGA_RETUS_12_S3RQS32.20-42-10-9-12_subsidy-DEFAULT_regulatory-DEFAULT_cid50_CFC.xml
 
+# BWC
+vendor/lib/libbwc.so
+vendor/lib64/libbwc.so
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
@@ -92,6 +96,16 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 # Display (Firmware)
 vendor/firmware/rgx.fw
 vendor/firmware/rgx.sh
+
+# DRVB
+vendor/lib/mt6765/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
+vendor/lib64/mt6765/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
+
+# ION
+vendor/lib/libion_mtk.so
+vendor/lib/libion_ulit.so
+vendor/lib64/libion_mtk.so
+vendor/lib64/libion_ulit.so
 
 # Ladder
 vendor/lib/libladder.so
