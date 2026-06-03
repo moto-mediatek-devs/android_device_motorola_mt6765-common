@@ -11,6 +11,22 @@ on late-fs
     mount_all /vendor/etc/fstab.mt6765 --late
 
 on post-fs-data
+    # Set permissions for nvcfg
+    chown system system /mnt/vendor/nvcfg
+    chmod 0771 /mnt/vendor/nvcfg
+    restorecon_recursive /mnt/vendor/nvcfg
+    chown system system /mnt/vendor/nvcfg/fg
+    chown system system /mnt/vendor/nvcfg/fg/old_fg_data
+    chown system system /mnt/vendor/nvcfg/fg/car_tune_value
+
+    # We chown/chmod /mnt/vendor/nvdata again because mount is run as root + defaults
+    chown root system /mnt/vendor/nvdata
+    chmod 0771 /mnt/vendor/nvdata
+    mkdir /mnt/vendor/nvdata/media 0771 media audio
+
+    # Set SELinux security contexts on upgrade or policy update.
+    restorecon_recursive /mnt/vendor/nvdata
+
     # Display
     chmod 0664 /dev/graphics/fb0
     chown system graphics /dev/graphics/fb0
