@@ -16,8 +16,8 @@ vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libminiui.so
 vendor/lib/libmpvr.so
 vendor/lib/libpixelflinger.so
-vendor/lib/libPVRMtkutils.so
-vendor/lib/libsrv_um.so
+vendor/lib/libPVRMtkutils.so;DISABLE_DEPS
+vendor/lib/libsrv_um.so;DISABLE_DEPS
 vendor/lib/libudf.so
 vendor/lib/mt6765/libdpframework.so;SYMLINK=vendor/lib/libdpframework.so
 vendor/lib/mt6765/libpq_prot.so;SYMLINK=vendor/lib/libpq_prot.so
@@ -56,10 +56,10 @@ vendor/lib64/libpq_cust.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libpqparamparser.so
 vendor/lib64/libpqpconfig.so
-vendor/lib64/libPVRMtkutils.so
+vendor/lib64/libPVRMtkutils.so;DISABLE_DEPS
 vendor/lib64/libPVROCL.so
 vendor/lib64/libPVRScopeServices.so
-vendor/lib64/libsrv_um.so
+vendor/lib64/libsrv_um.so;DISABLE_DEPS
 vendor/lib64/libudf.so
 vendor/lib64/libufwriter.so
 vendor/lib64/libusc.so
