@@ -1,1 +1,5 @@
-#
+# Unpinned blobs from XT2165-5_TONGA_RETUS_12_S3RQS32.20-42-10-9-12_subsidy-DEFAULT_regulatory-DEFAULT_cid50_CFC.xml
+
+# Ladder
+vendor/lib/libladder.so
+vendor/lib64/libladder.so
