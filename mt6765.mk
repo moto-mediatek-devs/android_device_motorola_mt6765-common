@@ -129,10 +129,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    libmtkperf_client
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint_mt6765.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_mt6765.json \
+    $(LOCAL_PATH)/configs/powerhint_mt6762.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_mt6762.json
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/mediatek
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/mediatek \
+    hardware/mediatek/libmtkperf_client
 
 # SPL
 VENDOR_SECURITY_PATCH := 2023-12-01

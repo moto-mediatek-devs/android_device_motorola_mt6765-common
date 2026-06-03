@@ -3,6 +3,9 @@ on early-init
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor performance
     write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor performance
 
+    # Point libperfmgr to the correct powerhint.
+    setprop vendor.powerhal.config powerhint_${ro.hardware}.json
+
 on charger
     write /sys/devices/system/cpu/cpu0/online 1
     write /sys/devices/system/cpu/cpu1/online 1
