@@ -62,6 +62,7 @@ ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 debug.sf.region_sampling_period_ns=1000000000
 
 # TEE
+ro.hardware.gatekeeper=trustonic
 ro.vendor.mtk_trustonic_tee_support=1
 
 # USB

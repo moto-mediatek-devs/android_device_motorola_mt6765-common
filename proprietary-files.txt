@@ -231,6 +231,9 @@ vendor/bin/fuelgauged
 vendor/etc/init/fuelgauged_init.rc
 vendor/lib/libfgauge_gm30.so
 
+# Gatekeeper
+vendor/lib64/hw/libMcGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.trustonic.so
+
 # ION
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
