@@ -241,6 +241,10 @@ vendor/lib64/libion_ulit.so
 vendor/lib/libladder.so
 vendor/lib64/libladder.so
 
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
+vendor/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc
+
 # NVRAM
 vendor/lib/libconnfem.so
 vendor/lib/libfile_op.so
