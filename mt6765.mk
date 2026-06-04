@@ -169,5 +169,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.mediatek
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/mt6765-common/mt6765-common-vendor.mk)
