@@ -139,7 +139,8 @@ BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix_aidl.xml \
-    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
+    hardware/motorola/vintf/device_framework_matrix.xml
 
 # Inherit the proprietary files
 include vendor/motorola/mt6765-common/BoardConfigVendor.mk
