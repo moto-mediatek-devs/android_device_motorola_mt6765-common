@@ -159,7 +159,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
-    hardware/mediatek/libmtkperf_client
+    hardware/mediatek/libmtkperf_client \
+    hardware/motorola
 
 # SPL
 VENDOR_SECURITY_PATCH := 2023-12-01
