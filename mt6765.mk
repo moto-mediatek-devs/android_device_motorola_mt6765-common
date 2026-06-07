@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
     fstab.mt6762.ramdisk \
     fstab.zram \
     init.moto.fingerprint.rc \
+    init.moto.sensors.rc \
     init.mt6762.rc \
     init.mt6765.rc \
     init.mt6765.charger.rc \
@@ -166,6 +167,23 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
     hardware/motorola
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors-service.multihal \
+    android.hardware.sensors@2.0-subhal-impl-1.0
+
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+PRODUCT_PACKAGES += \
+    android.hardware.sensor.accelerometer.prebuilt.xml \
+    android.hardware.sensor.barometer.prebuilt.xml \
+    android.hardware.sensor.compass.prebuilt.xml \
+    android.hardware.sensor.light.prebuilt.xml \
+    android.hardware.sensor.proximity.prebuilt.xml \
+    android.hardware.sensor.stepcounter.prebuilt.xml \
+    android.hardware.sensor.stepdetector.prebuilt.xml
 
 # SPL
 VENDOR_SECURITY_PATCH := 2023-12-01

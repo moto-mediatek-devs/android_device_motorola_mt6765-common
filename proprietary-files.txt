@@ -277,6 +277,9 @@ vendor/lib64/libnvram.so
 vendor/lib/libcustom_nvram.so;DUMMY_SHARED_LIB
 vendor/lib64/libcustom_nvram.so;DUMMY_SHARED_LIB
 
+# Sensors
+vendor/bin/capsense_reset
+
 # TEE
 vendor/bin/mcDriverDaemon
 vendor/etc/init/tee.rc
