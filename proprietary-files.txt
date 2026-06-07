@@ -286,3 +286,17 @@ vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
 vendor/lib64/libMcClient.so
 vendor/lib64/libMcRegistry.so
+
+# WMT
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+vendor/firmware/soc1_0_patch_mcu_1_1_hdr.bin
+vendor/firmware/soc1_0_ram_mcu_1_1_hdr.bin
+vendor/firmware/WMT_SOC_ELLIS_EPA.cfg
+vendor/firmware/WMT_SOC_ELLIS.cfg
+vendor/firmware/WMT_SOC_MAUI_EPA.cfg
+vendor/firmware/WMT_SOC_MAUI_EPAO.cfg
+vendor/firmware/WMT_SOC_MAUI_IPA.cfg
+vendor/firmware/WMT_SOC_TONGA_EPA.cfg
+vendor/firmware/WMT_SOC_TONGA_IPA.cfg
+vendor/firmware/WMT_SOC.cfg

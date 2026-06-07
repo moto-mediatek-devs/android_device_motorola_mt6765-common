@@ -125,6 +125,7 @@ PRODUCT_PACKAGES += \
     init.mt6762.rc \
     init.mt6765.rc \
     init.mt6765.charger.rc \
+    init.mt6765.connectivity.rc \
     init.mt6765.power.rc \
     ueventd.mt6765.rc
 

@@ -75,5 +75,12 @@ ro.vendor.mtk_trustonic_tee_support=1
 # USB
 vendor.usb.controller=musb-hdrc
 
+# WMT
+ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.patch.version=-1
+persist.vendor.connsys.dynamic.dump=0
+vendor.connsys.driver.ready=no
+
 # ZRAM
 persist.sys.zram_enabled=1

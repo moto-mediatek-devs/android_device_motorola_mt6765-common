@@ -53,6 +53,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6765.connectivity.rc",
+    src: "init.mt6765.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt6765.power.rc",
     src: "init.mt6765.power.rc",
     sub_dir: "init/hw",
