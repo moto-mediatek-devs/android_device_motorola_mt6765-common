@@ -25,6 +25,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.moto.fingerprint.rc",
+    src: "init.moto.fingerprint.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt6765.rc",
     src: "init.mt6765.rc",
     sub_dir: "init/hw",

@@ -1,0 +1,14 @@
+on fs
+    mkdir /mnt/vendor/persist/fps  0770 system system
+
+on post-fs-data
+    # config fingerprint
+    mkdir /data/vendor/.fps 0770 system vendor_fingerp
+    mkdir /mnt/vendor/persist/fps 0770 system system
+    mkdir /data/vendor/gf_data 0770 system system
+
+service vendor.fps-hal-sh /vendor/bin/init.oem.fingerprint2.overlay.sh
+    class late_start
+    user root
+    group system
+    oneshot

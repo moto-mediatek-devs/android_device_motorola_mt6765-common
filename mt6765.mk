@@ -99,6 +99,10 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.fingerprint.prebuilt.xml
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
@@ -116,6 +120,7 @@ PRODUCT_PACKAGES += \
     fstab.mt6762 \
     fstab.mt6762.ramdisk \
     fstab.zram \
+    init.moto.fingerprint.rc \
     init.mt6762.rc \
     init.mt6765.rc \
     init.mt6765.charger.rc \
