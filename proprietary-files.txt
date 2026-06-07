@@ -296,6 +296,18 @@ vendor/etc/init/trustonic.rc
 vendor/lib64/libMcClient.so
 vendor/lib64/libMcRegistry.so
 
+# Wi-Fi
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant.conf
+vendor/firmware/soc1_0_ram_wifi_1_1_hdr.bin
+vendor/firmware/txpowerctrl_EPA.cfg
+vendor/firmware/txpowerctrl.cfg
+vendor/firmware/wifi_epa.cfg
+vendor/firmware/WIFI_RAM_CODE_soc1_0_1_1.bin
+vendor/firmware/wifi.cfg
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
+
 # WMT
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader

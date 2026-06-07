@@ -2,11 +2,18 @@ on post-fs-data
     mkdir /data/vendor/stp_dump 0755 system system
     mkdir /data/vendor/connsyslog 0755 system system
 
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+
 on boot
     insmod /vendor/lib/modules/wmt_drv.ko
 
 on property:vendor.connsys.driver.ready=yes
     insmod /vendor/lib/modules/bt_drv_6765.ko
+    insmod /vendor/lib/modules/wmt_chrdev_wifi.ko
+    insmod /vendor/lib/modules/wlan_drv_gen4m.ko
+    enable wlan_assistant
 
 service wmt_loader /vendor/bin/wmt_loader
     class early_hal
@@ -18,3 +25,9 @@ service wmt_launcher /vendor/bin/wmt_launcher -p /vendor/firmware/ -o 1
     class early_hal
     user system
     group system
+
+service wlan_assistant /vendor/bin/wlan_assistant
+    class main
+    user wifi
+    group system gps inet
+    disabled

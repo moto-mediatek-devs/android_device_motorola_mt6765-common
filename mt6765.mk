@@ -214,5 +214,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service \
+    hostapd \
+    libwifi-hal-wrapper:64 \
+    wpa_supplicant
+
+PRODUCT_PACKAGES += \
+    android.hardware.wifi.direct.prebuilt.xml \
+    android.hardware.wifi.passpoint.prebuilt.xml \
+    android.hardware.wifi.prebuilt.xml
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/mt6765-common/mt6765-common-vendor.mk)
