@@ -125,6 +125,13 @@ vendor/etc/audio_param/VoWHwVad_ParamUnitDesc.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/aurisys_config.xml
 
+# Bluetooth
+vendor/firmware/BT_FW.cfg
+vendor/firmware/soc1_0_ram_bt_1_1_hdr.bin
+vendor/lib64/libbluetooth_mtk_pure.so
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbt-vendor.so
+
 # BWC
 vendor/lib/libbwc.so
 vendor/lib64/libbwc.so

@@ -69,6 +69,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio.low_latency.prebuilt.xml
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth-service.mediatek
+
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth_le.prebuilt.xml \
+    android.hardware.bluetooth.prebuilt.xml
+
 # Boot
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.mediatek \
