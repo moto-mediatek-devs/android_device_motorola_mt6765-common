@@ -48,6 +48,14 @@ ro.vendor.pq.mtk_video_transition=0
 # Fingerprint
 ro.vendor.hw.fps=true
 
+# Media
+debug.stagefright.c2inputsurface=-1
+media.c2.dmabuf.padding=3072
+ro.vendor.mtk_config_max_dram_size=0x800000000
+ro.vendor.mtk_sec_video_path_support=1
+ro.vendor.mtk_tee_gp_support=1
+vendor.mtk.vdec.waitkeyframeforplay=9
+
 # Sensors
 ro.vendor.mtk.sensor.support=yes
 ro.vendor.sensors.mot_ltv=true
