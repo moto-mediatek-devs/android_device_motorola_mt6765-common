@@ -127,10 +127,12 @@ vendor/etc/aurisys_config.xml
 
 # Bluetooth
 vendor/firmware/BT_FW.cfg
-vendor/firmware/soc1_0_ram_bt_1_1_hdr.bin
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbt-vendor.so
+
+# Bluetooth (Firmware) - from UMIDIGI_Note_90C_V1.0_20241219
+vendor/firmware/soc1_0_ram_bt_1_1_hdr.bin|b3ee7d786b61456141dc5aea9ebfa3de1cd5e041
 
 # BWC
 vendor/lib/libbwc.so
