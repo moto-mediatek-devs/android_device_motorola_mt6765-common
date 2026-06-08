@@ -27,6 +27,10 @@ on post-fs-data
     # Set SELinux security contexts on upgrade or policy update.
     restorecon_recursive /mnt/vendor/nvdata
 
+    # Audio
+    mkdir /data/vendor/audiohal 0771 system audio
+    mkdir /data/vendor/audiohal/audio_param 0771 system audio
+
     # Display
     chmod 0664 /dev/graphics/fb0
     chown system graphics /dev/graphics/fb0
