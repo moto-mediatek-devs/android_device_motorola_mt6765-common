@@ -110,6 +110,9 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.mt6765
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 

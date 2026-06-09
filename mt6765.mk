@@ -175,6 +175,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 include hardware/mediatek/configs/properties/vendor_logtag.mk
 
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.telephony.gsm.prebuilt.xml
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \

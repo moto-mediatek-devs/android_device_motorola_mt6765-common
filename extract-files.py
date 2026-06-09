@@ -54,7 +54,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_describe')
         .clear_symbol_version('AHardwareBuffer_getNativeHandle')
         .clear_symbol_version('AHardwareBuffer_release'),
-    ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
+    ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so',
+     'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
     'vendor/lib/librt_extamp_intf.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
