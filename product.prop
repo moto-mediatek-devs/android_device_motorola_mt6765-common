@@ -25,3 +25,10 @@ bluetooth.profile.vcp.controller.enabled=true
 
 # BPF
 ro.bpf.kver_override=5.10.239
+
+# LMK
+ro.lmk.kill_heaviest_task=true
+ro.lmk.thrashing_limit=60
+ro.lmk.swap_free_low_percentage=20
+ro.lmk.swap_util_max=80
+ro.lmk.psi_complete_stall_ms=80
