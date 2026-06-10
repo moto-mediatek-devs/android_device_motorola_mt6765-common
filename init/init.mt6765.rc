@@ -103,3 +103,6 @@ on post-fs-data
 
     # Finish the post-fs-data phase.
     setprop vold.post_fs_data_done 1
+
+on boot
+    insmod /vendor/lib/modules/mt6357-accdet.ko
