@@ -57,6 +57,8 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so',
      'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
+    'vendor/bin/hw/mtkfusionrild': blob_fixup()
+        .add_needed('libutils-v32.so'),
     'vendor/lib/librt_extamp_intf.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml': blob_fixup()
