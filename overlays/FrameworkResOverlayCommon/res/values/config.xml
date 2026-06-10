@@ -135,6 +135,9 @@
         <item>0:2:15</item>  <!-- ID0:Fingerprint:Strong -->
     </string-array>
 
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
+
     <!-- Whether this device is supporting the software microphone toggle -->
     <bool name="config_supportsMicToggle">true</bool>
 
