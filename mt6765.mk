@@ -154,7 +154,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     FrameworkResOverlayCommon \
-    LineageSDKOverlayCommon
+    LineageSDKOverlayCommon \
+    LineageSystemUIOverlayCommon
 
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 
