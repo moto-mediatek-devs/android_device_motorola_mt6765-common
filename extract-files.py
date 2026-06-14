@@ -44,6 +44,8 @@ lib_fixups: lib_fixups_user_type = {
 
 
 blob_fixups: blob_fixups_user_type = {
+    ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
+        .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
     'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.12-impl.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
