@@ -6,6 +6,12 @@ on post-fs-data
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
+    mkdir /data/vendor/gps 0770 gps system
+    mkdir /data/vendor/log 0770 gps system
+    mkdir /data/vendor/log/gps 0770 gps system
+
+    chmod 0660 /dev/gps_emi
+
 on boot
     insmod /vendor/lib/modules/wmt_drv.ko
 
@@ -13,7 +19,15 @@ on property:vendor.connsys.driver.ready=yes
     insmod /vendor/lib/modules/bt_drv_6765.ko
     insmod /vendor/lib/modules/wmt_chrdev_wifi.ko
     insmod /vendor/lib/modules/wlan_drv_gen4m.ko
+    insmod /vendor/lib/modules/gps_drv.ko
     enable wlan_assistant
+
+service mnld /vendor/bin/mnld
+    class main
+    user gps
+    capabilities WAKE_ALARM  
+    group gps inet misc sdcard_rw sdcard_r media_rw system radio wakelock
+    socket mnld stream 660 gps system
 
 service wmt_loader /vendor/bin/wmt_loader
     class early_hal

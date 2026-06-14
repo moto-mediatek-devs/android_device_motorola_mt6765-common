@@ -120,6 +120,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl:64
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.location.gps.prebuilt.xml
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
