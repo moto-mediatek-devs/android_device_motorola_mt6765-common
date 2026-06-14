@@ -62,6 +62,16 @@
         <fqname>@1.3::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.tetheroffload.config</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOffloadConfig/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tetheroffload.control</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IOffloadControl/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>com.motorola.hardware.biometric.fingerprint</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IMotoFingerPrint/default</fqname>
@@ -95,6 +105,11 @@
         <fqname>@3.0::IMtkRadioEx/mtkSe1</fqname>
         <fqname>@3.0::IMtkRadioEx/mtkSlot1</fqname>
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch1</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.netdagent</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::INetdagent/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.radio_op</name>

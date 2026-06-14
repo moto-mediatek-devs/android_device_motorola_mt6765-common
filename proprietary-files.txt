@@ -443,6 +443,15 @@ vendor/lib64/libMcClient.so
 vendor/lib64/libMcRegistry.so
 vendor/lib64/libTEECommon.so
 
+# Tether Offload
+vendor/bin/hw/tetheroffloadservice
+vendor/bin/netdagent
+vendor/etc/init/netdagent.rc
+vendor/etc/init/tetheroffloadservice.rc
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
 # Wi-Fi
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
