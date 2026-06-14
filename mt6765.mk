@@ -211,6 +211,13 @@ PRODUCT_PACKAGES += \
 # SPL
 VENDOR_SECURITY_PATCH := 2023-12-01
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.mediatek
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
