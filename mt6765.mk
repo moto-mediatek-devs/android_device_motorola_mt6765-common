@@ -82,6 +82,12 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.mediatek \
     android.hardware.boot-service.mediatek_recovery
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.flash-autofocus.prebuilt.xml \
+    android.hardware.camera.front.prebuilt.xml \
+    android.hardware.camera.full.prebuilt.xml \
+
 # Chipinfo
 PRODUCT_PACKAGES += \
     chipinfo
