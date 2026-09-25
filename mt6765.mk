@@ -152,6 +152,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6765.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6765.rc \
     $(LOCAL_PATH)/init/init.recovery.mt6765.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6762.rc
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
