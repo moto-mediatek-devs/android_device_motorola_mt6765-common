@@ -20,7 +20,6 @@ on property:vendor.connsys.driver.ready=yes
     insmod /vendor/lib/modules/wmt_chrdev_wifi.ko
     insmod /vendor/lib/modules/wlan_drv_gen4m.ko
     insmod /vendor/lib/modules/gps_drv.ko
-    enable wlan_assistant
 
 service mnld /vendor/bin/mnld
     class main
@@ -39,9 +38,3 @@ service wmt_launcher /vendor/bin/wmt_launcher -p /vendor/firmware/ -o 1
     class early_hal
     user system
     group system
-
-service wlan_assistant /vendor/bin/wlan_assistant
-    class main
-    user wifi
-    group system gps inet
-    disabled
