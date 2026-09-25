@@ -109,7 +109,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so')
         .replace_needed('libsfplugin_ccodec_utils.so', 'libsfplugin_ccodec_utils-v31.so')
-        .replace_needed('libui.so', 'libui-v31.so'),
+        .replace_needed('libui.so', 'libui-v31.so')
+        .replace_needed('libformatter.so', 'libformatter_mtk.so'),
     'vendor/lib/libcodec2_soft_common-v31.so': blob_fixup()
         .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so')
