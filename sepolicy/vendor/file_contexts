@@ -1,0 +1,14 @@
+# Binaries
+/vendor/bin/capsense_reset                                                        u:object_r:capsense_reset_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-goodixservice       u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service-fpc         u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/init\.oem\.fingerprint2\.overlay\.sh                                  u:object_r:vendor_init_fingerprint_exec:s0
+
+# Data
+/data/vendor/\.fps(/.*)?                                                          u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/gf_data(/.*)?                                                        u:object_r:fingerprint_vendor_data_file:s0
+
+# Persist
+/mnt/vendor/persist/camera(/.*)?                                                  u:object_r:persist_camera_file:s0
+/mnt/vendor/persist/fps(/.*)?                                                     u:object_r:persist_fps_file:s0
+/mnt/vendor/persist/mobicore(/.*)?                                                u:object_r:persist_mobicore_data_file:s0

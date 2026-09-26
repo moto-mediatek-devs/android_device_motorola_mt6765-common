@@ -1,0 +1,13 @@
+# Persist
+type persist_camera_file, file_type, data_file_type;
+type persist_fps_file, file_type, data_file_type;
+type persist_mobicore_data_file, file_type, data_file_type;
+
+# Proc
+type proc_min_free_kbytes, fs_type, proc_type;
+
+# Sysfs
+type vendor_sysfs_capsense, fs_type, sysfs_type;
+type vendor_sysfs_display_idle, fs_type, sysfs_type;
+type vendor_sysfs_fingerprint, fs_type, sysfs_type;
+type vendor_sysfs_input, fs_type, sysfs_type;

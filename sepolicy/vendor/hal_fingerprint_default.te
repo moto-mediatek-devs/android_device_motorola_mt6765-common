@@ -1,0 +1,6 @@
+rw_dir_file(hal_fingerprint_default, vendor_sysfs_fingerprint)
+
+add_hwservice(hal_fingerprint_default, hal_motofingerprint_hwservice)
+
+get_prop(hal_fingerprint_default, build_bootimage_prop)
+set_prop(hal_fingerprint_default, vendor_mot_fingerprint_prop)

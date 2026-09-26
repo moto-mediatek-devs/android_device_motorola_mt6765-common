@@ -1,0 +1,28 @@
+# Capsense
+genfscon sysfs /class/capsense                                                                                     u:object_r:vendor_sysfs_capsense:s0
+genfscon sysfs /devices/virtual/capsense                                                                           u:object_r:vendor_sysfs_capsense:s0
+
+# Display
+genfscon sysfs /devices/platform/mtkfb@0/graphics/fb0/idle_state                                                   u:object_r:vendor_sysfs_display_idle:s0
+
+# Fingerprint
+genfscon sysfs /devices/virtual/fingerprint/fpc_spi                                                                u:object_r:vendor_sysfs_fingerprint:s0
+
+# Input Devices
+genfscon sysfs /devices/virtual/input                                                                              u:object_r:vendor_sysfs_input:s0
+
+# Power supply
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-001a/power_supply                                           u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-006b/power_supply                                           u:object_r:sysfs_batteryinfo:s0
+
+# Proc
+genfscon proc /sys/vm/min_free_kbytes                                                                              u:object_r:proc_min_free_kbytes:s0
+
+# Wakeup
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:main_pmic/mt6357-charger-type-detection/power_supply/ac/wakeup  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:main_pmic/mt6357-charger-type-detection/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10238000.gce/wakeup                                                                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11010000.spi/spi_master/spi1/spi1.0/wakeup                                                    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-001a/power_supply/bq2560x-gauge/wakeup                                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0047/wakeup                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-006b/power_supply/bq2560x-gauge/wakeup                                  u:object_r:sysfs_wakeup:s0

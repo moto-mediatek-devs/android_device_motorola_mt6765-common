@@ -1,0 +1,4 @@
+allow mobicore mnt_vendor_file:dir search;
+allow mobicore persist_data_file:dir search;
+allow mobicore persist_mobicore_data_file:dir create_dir_perms;
+allow mobicore persist_mobicore_data_file:file create_file_perms;
