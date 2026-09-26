@@ -6,6 +6,9 @@ on post-fs-data
     mkdir /data/vendor/.fps 0770 system vendor_fingerp
     mkdir /mnt/vendor/persist/fps 0770 system system
     mkdir /data/vendor/gf_data 0770 system system
+    restorecon_recursive /data/vendor/.fps
+    restorecon_recursive /mnt/vendor/persist/fps
+    restorecon_recursive /data/vendor/gf_data
 
 service vendor.fps-hal-sh /vendor/bin/init.oem.fingerprint2.overlay.sh
     class late_start
