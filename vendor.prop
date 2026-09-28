@@ -30,7 +30,6 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 ro.mtk_cam_stereo_camera_support=1
 ro.vendor.camera.isp.support.colorspace=0
-ro.vendor.camera3.zsl.default=300
 ro.vendor.mtk_camera_app_version=3
 ro.vendor.mtk_zsdhdr_support=1
 vendor.camera.mdp.cz.enable=1
@@ -116,7 +115,6 @@ ro.telephony.iwlan_operation_mode=AP-assisted
 ro.vendor.mtk_c2k_lte_mode=0
 ro.vendor.mtk_calldrop_reason=1
 ro.vendor.mtk_carrierexpress_pack=na
-ro.vendor.mtk_dmc_support=1
 ro.vendor.mtk_eccci_c2k=1
 ro.vendor.mtk_embms_support=1
 ro.vendor.mtk_external_sim_only_slots=0
@@ -130,7 +128,6 @@ ro.vendor.mtk_sim_card_onoff=3
 ro.vendor.mtk_single_bin_modem_support=1
 ro.vendor.mtk_world_phone_policy=0
 ro.vendor.num_md_protocol=2
-ro.vendor.radio.imei.sv=77
 ro.vendor.sim_me_lock_mode=3
 
 # Sensors
