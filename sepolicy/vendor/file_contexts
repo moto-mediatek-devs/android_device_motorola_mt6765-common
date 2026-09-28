@@ -2,7 +2,13 @@
 /vendor/bin/capsense_reset                                                        u:object_r:capsense_reset_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-goodixservice       u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service-fpc         u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/init\.moto\.hw\.sh                                                    u:object_r:vendor_init_hw_exec:s0
 /vendor/bin/init\.oem\.fingerprint2\.overlay\.sh                                  u:object_r:vendor_init_fingerprint_exec:s0
+
+# Block devices
+/dev/block/by-name/hw                                                             u:object_r:vendor_hw_block_device:s0
+/dev/block/by-name/utags                                                          u:object_r:vendor_utags_block_device:s0
+/dev/block/by-name/utagsBackup                                                    u:object_r:vendor_utags_block_device:s0
 
 # Data
 /data/vendor/\.fps(/.*)?                                                          u:object_r:fingerprint_vendor_data_file:s0

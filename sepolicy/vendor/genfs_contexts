@@ -16,6 +16,8 @@ genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-001a/power_supply        
 genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-006b/power_supply                                           u:object_r:sysfs_batteryinfo:s0
 
 # Proc
+genfscon proc /config                                                                                        u:object_r:vendor_proc_hw:s0
+genfscon proc /hw                                                                                            u:object_r:vendor_proc_hw:s0
 genfscon proc /sys/vm/min_free_kbytes                                                                              u:object_r:proc_min_free_kbytes:s0
 genfscon proc /net/wlan/driver                                                                                     u:object_r:proc_wlan_driver:s0
 

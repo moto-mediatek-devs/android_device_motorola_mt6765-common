@@ -5,6 +5,7 @@ type persist_mobicore_data_file, file_type, data_file_type;
 
 # Proc
 type proc_min_free_kbytes, fs_type, proc_type;
+type vendor_proc_hw, fs_type, proc_type;
 type proc_wlan_driver, fs_type, proc_type;
 
 # Sysfs

@@ -1,0 +1,11 @@
+type vendor_init_hw, domain;
+type vendor_init_hw_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_init_hw)
+
+allow vendor_init_hw vendor_shell_exec:file rx_file_perms;
+allow vendor_init_hw vendor_toolbox_exec:file rx_file_perms;
+
+rw_dir_file(vendor_init_hw, vendor_proc_hw)
+
+get_prop(vendor_init_hw, bootloader_prop)
+set_prop(vendor_init_hw, vendor_mot_hw_prop)
