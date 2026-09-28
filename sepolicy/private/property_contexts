@@ -1,0 +1,2 @@
+# SAR
+sys.moto.sar.wifi_scenario    u:object_r:moto_sar_prop:s0 exact int

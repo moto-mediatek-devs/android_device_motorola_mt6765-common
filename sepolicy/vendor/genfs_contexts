@@ -17,6 +17,7 @@ genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-006b/power_supply        
 
 # Proc
 genfscon proc /sys/vm/min_free_kbytes                                                                              u:object_r:proc_min_free_kbytes:s0
+genfscon proc /net/wlan/driver                                                                                     u:object_r:proc_wlan_driver:s0
 
 # Wakeup
 genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:main_pmic/mt6357-charger-type-detection/power_supply/ac/wakeup  u:object_r:sysfs_wakeup:s0
