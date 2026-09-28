@@ -313,7 +313,6 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libDR.so
 vendor/lib64/libmnl.so:vendor/lib64/libmnl_mtk.so;FIX_SONAME
-vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 
 # ION
 vendor/lib/libion_mtk.so
@@ -476,7 +475,6 @@ vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
 vendor/lib64/motrilutils.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/lib64/vendor.mediatek.hardware.radio_op@3.0.so
 
 # Sensors
@@ -498,7 +496,6 @@ vendor/etc/init/netdagent.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal
 vendor/bin/thermal
