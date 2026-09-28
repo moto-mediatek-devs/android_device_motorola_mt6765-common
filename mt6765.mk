@@ -191,6 +191,10 @@ include hardware/mediatek/configs/properties/vendor_logtag.mk
 PRODUCT_PACKAGES += \
     android.hardware.telephony.gsm.prebuilt.xml
 
+# SAR
+PRODUCT_PACKAGES += \
+    MotoMdmCutback
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
