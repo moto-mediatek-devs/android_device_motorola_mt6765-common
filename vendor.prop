@@ -73,6 +73,23 @@ ro.vendor.pq.mtk_video_transition=0
 # Fingerprint
 ro.vendor.hw.fps=true
 
+# IMS
+persist.rcs.supported=1
+persist.vendor.ims_support=1
+persist.vendor.mims_support=1
+persist.vendor.mtk.volte.enable=1
+persist.vendor.mtk_ct_volte_support=3
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_rcs_single_reg_support=0
+persist.vendor.mtk_rcs_ua_support=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.vilte_support=1
+persist.vendor.viwifi_support=1
+persist.vendor.volte_support=1
+persist.vendor.vt.RTPInfo=1
+persist.vendor.vt.supported=1
+ro.vendor.md_auto_setup_ims=1
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
@@ -85,13 +102,7 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 keyguard.no_require_sim=true
 persist.radio.multisim.config=ss
 persist.radio.sar_sensor=1
-persist.rcs.supported=1
 persist.vendor.md_c2k_cap_dep_check=0
-persist.vendor.mims_support=1
-persist.vendor.mtk_rcs_single_reg_support=0
-persist.vendor.mtk_rcs_single_reg_support=0
-persist.vendor.mtk_rcs_ua_support=1
-persist.vendor.mtk_rcs_ua_support=1
 persist.vendor.mtk_sim_switch_policy=2
 persist.vendor.mtk_usp_switch_mode=1
 persist.vendor.radio.data.oem_wifi_support_apn=1

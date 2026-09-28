@@ -155,6 +155,14 @@ PRODUCT_COPY_FILES += \
 # ION
 $(call soong_config_set_bool,libion,legacy_impl,true)
 
+# IMS
+$(call inherit-product, hardware/lineage/compat/frameworks/compat.mk)
+$(call inherit-product, hardware/mediatek/frameworks/mediatek-frameworks.mk)
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.telephony.xml
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
@@ -189,7 +197,8 @@ include hardware/mediatek/configs/properties/vendor_logtag.mk
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.telephony.gsm.prebuilt.xml
+    android.hardware.telephony.gsm.prebuilt.xml \
+    android.hardware.telephony.ims.prebuilt.xml
 
 # SAR
 PRODUCT_PACKAGES += \
