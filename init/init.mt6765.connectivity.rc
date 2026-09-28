@@ -21,6 +21,16 @@ on property:vendor.connsys.driver.ready=yes
     insmod /vendor/lib/modules/wlan_drv_gen4m.ko
     insmod /vendor/lib/modules/gps_drv.ko
 
+# Used by SAR service to select new txpowercfg based on scenario.
+on property:sys.moto.sar.wifi_scenario=*
+    write /proc/net/wlan/driver "SET_PWR_CTRL MySAR ${sys.moto.sar.wifi_scenario}"
+
+on property:init.svc.wpa_supplicant=running
+    write /proc/net/wlan/driver "SET_PWR_CTRL MySAR ${sys.moto.sar.wifi_scenario:-0}"
+
+on property:init.svc.hostapd=running
+    write /proc/net/wlan/driver "SET_PWR_CTRL MySAR ${sys.moto.sar.wifi_scenario:-0}"
+
 service mnld /vendor/bin/mnld
     class main
     user gps

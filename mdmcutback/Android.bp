@@ -1,0 +1,16 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "MotoMdmCutback",
+
+    srcs: ["src/**/*.java"],
+    static_libs: ["vendor.mediatek.hardware.mtkradioex-V3.0-java"],
+
+    certificate: "platform",
+    platform_apis: true,
+    privileged: true,
+    system_ext_specific: true,
+}
