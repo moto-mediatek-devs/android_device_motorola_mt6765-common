@@ -1,0 +1,32 @@
+on early-init
+    setprop ro.vendor.hw.device ${ro.boot.device}
+    setprop ro.vendor.hw.radio ${ro.boot.radio}
+
+    wait /dev/block/by-name/hw
+    exec_start vendor.moto-hw-sh
+
+service vendor.moto-hw-sh /vendor/bin/init.moto.hw.sh
+    class core
+    user root
+    oneshot
+    disabled
+
+on property:ro.vendor.hw.dualsim=true
+    setprop persist.radio.multisim.config dsds
+    setprop persist.vendor.radio.msimmode dsds
+    setprop telephony.active_modems.max_count 2
+    setprop ro.vendor.radio.max.multisim dsds
+    setprop persist.vendor.mims_support 2
+    setprop persist.vendor.radio.smart.data.switch 1
+    setprop ro.vendor.mtk_disable_cap_switch 0
+    setprop ro.vendor.mtk_data_config 1
+
+on property:ro.vendor.hw.dualsim=false
+    setprop persist.radio.multisim.config ss
+    setprop persist.vendor.radio.msimmode ss
+    setprop telephony.active_modems.max_count 1
+    setprop ro.vendor.radio.max.multisim ss
+    setprop persist.vendor.mims_support 1
+    setprop persist.vendor.radio.smart.data.switch 0
+    setprop ro.vendor.mtk_disable_cap_switch 1
+    setprop ro.vendor.mtk_data_config 0

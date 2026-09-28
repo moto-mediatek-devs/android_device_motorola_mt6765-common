@@ -140,6 +140,8 @@ PRODUCT_PACKAGES += \
     fstab.mt6762.ramdisk \
     fstab.zram \
     init.moto.fingerprint.rc \
+    init.moto.hw.rc \
+    init.moto.hw.sh \
     init.moto.sensors.rc \
     init.mt6762.rc \
     init.mt6765.rc \

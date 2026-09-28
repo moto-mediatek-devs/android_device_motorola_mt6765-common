@@ -76,7 +76,6 @@ ro.vendor.hw.fps=true
 # IMS
 persist.rcs.supported=1
 persist.vendor.ims_support=1
-persist.vendor.mims_support=1
 persist.vendor.mtk.volte.enable=1
 persist.vendor.mtk_ct_volte_support=3
 persist.vendor.mtk_dynamic_ims_switch=1
@@ -100,7 +99,6 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 
 # RIL
 keyguard.no_require_sim=true
-persist.radio.multisim.config=ss
 persist.radio.sar_sensor=1
 persist.vendor.md_c2k_cap_dep_check=0
 persist.vendor.mtk_sim_switch_policy=2
@@ -110,11 +108,9 @@ persist.vendor.radio.fd.counter=150
 persist.vendor.radio.fd.off.counter=50
 persist.vendor.radio.fd.off.r8.counter=50
 persist.vendor.radio.fd.r8.counter=150
-persist.vendor.radio.msimmode=ss
 persist.vendor.radio.mtk_dsbp_support=2
 persist.vendor.radio.mtk_ps2_rat=L/W/G
 persist.vendor.radio.mtk_ps3_rat=G
-persist.vendor.radio.smart.data.switch=1
 ro.telephony.default_network=10,10
 ro.telephony.iwlan_operation_mode=AP-assisted
 ro.vendor.mtk_c2k_lte_mode=0
@@ -136,7 +132,6 @@ ro.vendor.mtk_world_phone_policy=0
 ro.vendor.num_md_protocol=2
 ro.vendor.radio.imei.sv=77
 ro.vendor.sim_me_lock_mode=3
-telephony.active_modems.max_count=1
 
 # Sensors
 ro.vendor.mtk.sensor.support=yes

@@ -3,6 +3,7 @@ import /vendor/etc/init/hw/init.mt6765.connectivity.rc
 import /vendor/etc/init/hw/init.mt6765.power.rc
 import /vendor/etc/init/hw/init.mt6765.usb.rc
 import /vendor/etc/init/hw/init.moto.fingerprint.rc
+import /vendor/etc/init/hw/init.moto.hw.rc
 import /vendor/etc/init/hw/init.moto.sensors.rc
 
 on early-init

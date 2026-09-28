@@ -32,6 +32,19 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.moto.hw.rc",
+    src: "init.moto.hw.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.moto.hw.sh",
+    src: "init.moto.hw.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.moto.sensors.rc",
     src: "init.moto.sensors.rc",
     sub_dir: "init/hw",
