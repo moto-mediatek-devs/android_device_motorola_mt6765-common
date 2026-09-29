@@ -184,6 +184,9 @@ $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# Platform
+TARGET_BOARD_PLATFORM := mt6765
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
@@ -201,6 +204,8 @@ include hardware/mediatek/configs/properties/vendor_logtag.mk
 PRODUCT_PACKAGES += \
     android.hardware.telephony.gsm.prebuilt.xml \
     android.hardware.telephony.ims.prebuilt.xml
+
+ENABLE_VENDOR_RIL_SERVICE := true
 
 # SAR
 PRODUCT_PACKAGES += \

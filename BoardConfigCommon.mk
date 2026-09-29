@@ -97,7 +97,6 @@ BOARD_USES_METADATA_PARTITION := true
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6765
 BOARD_HAS_MTK_HARDWARE := true
 
 # Properties
@@ -109,9 +108,6 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.mt6765
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
-
-# RIL
-ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 include device/lineage/sepolicy/libion/sepolicy.mk
