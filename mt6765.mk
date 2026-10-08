@@ -197,6 +197,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint_mt6765.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_mt6765.json \
     $(LOCAL_PATH)/configs/powerhint_mt6762.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_mt6762.json
 
+# Power-off Alarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # Properties
 include hardware/mediatek/configs/properties/vendor_logtag.mk
 
