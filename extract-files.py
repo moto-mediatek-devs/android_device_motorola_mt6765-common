@@ -68,8 +68,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libutils-v32.so'),
     'vendor/lib/librt_extamp_intf.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
-    'vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml': blob_fixup()
-        .regex_replace('1.1', '1.2'),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek': blob_fixup()
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so')
         .replace_needed('libcodec2_hidl@1.0.so', 'libcodec2_hidl@1.0-v31.so')

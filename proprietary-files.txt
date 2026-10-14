@@ -228,6 +228,7 @@ vendor/firmware/rgx.sh
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/lib/AVCSecureVdecCA.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
@@ -330,32 +331,32 @@ vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/mtk_platform_codecs_config.xml
 
-# Media (C2)
-system/lib/libstagefright_bufferqueue_helper.so:vendor/lib/libstagefright_bufferqueue_helper-v31.so;FIX_SONAME
-system/lib/libui.so:vendor/lib/libui-v31.so;FIX_SONAME
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
-vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
-vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
-vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
-vendor/etc/seccomp_policy/mediacodec.policy
-vendor/etc/seccomp_policy/mediaextractor.policy
-vendor/etc/seccomp_policy/mediaswcodec.policy
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
-vendor/lib/libcodec2_hidl_plugin.so:vendor/lib/libcodec2_hidl_plugin-v31.so;FIX_SONAME
-vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0-v31.so;FIX_SONAME
-vendor/lib/libcodec2_hidl@1.1.so:vendor/lib/libcodec2_hidl@1.1-v31.so;FIX_SONAME
-vendor/lib/libcodec2_hidl@1.2.so:vendor/lib/libcodec2_hidl@1.2-v31.so;FIX_SONAME
-vendor/lib/libcodec2_mtk_c2store.so
-vendor/lib/libcodec2_mtk_vdec.so
-vendor/lib/libcodec2_mtk_venc.so
-vendor/lib/libcodec2_soft_common.so:vendor/lib/libcodec2_soft_common-v31.so;FIX_SONAME
-vendor/lib/libcodec2_soft_mtk_mp3dec.so
-vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk-v31.so;FIX_SONAME
-vendor/lib/libcodec2_vpp_qt_plugin.so
-vendor/lib/libcodec2_vpp_rs_plugin.so
-vendor/lib/libformatter.so:vendor/lib/libformatter_mtk.so;FIX_SONAME
-vendor/lib/libmp3dec_mtk.so
-vendor/lib/libsfplugin_ccodec_utils.so:vendor/lib/libsfplugin_ccodec_utils-v31.so;FIX_SONAME
+# Media (C2) - from iku A25 SP1A.210812.016 mp1V15240
+system/lib/libstagefright_bufferqueue_helper.so:vendor/lib/libstagefright_bufferqueue_helper-v31.so;FIX_SONAME|d00767561323bbc33686b4bb6d9bbf4a2334d04c|11c8de03952642267132c729f1a7b56811bc5593
+system/lib/libui.so:vendor/lib/libui-v31.so;FIX_SONAME|0174d20f806d6094c89427fb3b369916354f9fc5|2fcce063b6299705092d00df3d86827e86123572
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|74c4fd163b70e5bbf82a3be9c225482529571a49|c1341525d7238bfb5c811703e5f44f82bb32c998
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc|e09ad9455fc75875f6ccef32572bfc0894c98ab5
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy|2f5377909dbdab645c9e4fe0b52c4c5c823256a1
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy|7e75df111158f52a57e53afed252bd21ac1468d6
+vendor/etc/seccomp_policy/mediacodec.policy|732e01c6c88d125ca8778a3d88e51ef8511979ea
+vendor/etc/seccomp_policy/mediaextractor.policy|6eecbd7a2c589059d4df9b6035033461b85e8784
+vendor/etc/seccomp_policy/mediaswcodec.policy|ad691ac1a44c6f8cf48f9a7422f02104d56a0fa3
+vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml|622d0480a3af7a162e37c56e0770213d8027000d
+vendor/lib/libcodec2_hidl_plugin.so:vendor/lib/libcodec2_hidl_plugin-v31.so;FIX_SONAME|39caa6eb6243f7eb040556c1927d4dd5be9e81b7|ba5c3e624d36b30c170c196b34fe4c7f238995ed
+vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0-v31.so;FIX_SONAME|2969059c4ee1335ec0753c67fd2c1445fe457ac7|fd2131c7d73fa103c9caf74923c7e3a85173dd98
+vendor/lib/libcodec2_hidl@1.1.so:vendor/lib/libcodec2_hidl@1.1-v31.so;FIX_SONAME|fa95e8b0d154f83b134a00517bc5f0d052e6c463|d47861cf3399f6f627c67c28f4cb8624684a7ac6
+vendor/lib/libcodec2_hidl@1.2.so:vendor/lib/libcodec2_hidl@1.2-v31.so;FIX_SONAME|f23a6345d52f6f3a5193294701c07d61449b8e3b|11c2e5c4ada037c8cfec895d265f0536fc64a5dc
+vendor/lib/libcodec2_mtk_c2store.so|5c9b53bf700e9d7b72d3a60904ff6b4120bf03c1|734155c59c1cbc2d5a3a33b9f8d00683774775d5
+vendor/lib/libcodec2_mtk_vdec.so|38ae2e79648094af965064616fa33308092ca497|51cef59447d404590684738aca4177582edfe24c
+vendor/lib/libcodec2_mtk_venc.so|7b35965de768e9f8916d6459ce04fd9dca59bef6|eeac6b8b11607399bc3e12660621063b12fa89f4
+vendor/lib/libcodec2_soft_common.so:vendor/lib/libcodec2_soft_common-v31.so;FIX_SONAME|d66da76a5e882bdcd51c8a4f3ae56f241034dfe7|c9caab5e3140585a7b4896217e40b6e37d73b3bc
+vendor/lib/libcodec2_soft_mtk_mp3dec.so|f2385ba88b0921d840f151f426896a188606f824
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk-v31.so;FIX_SONAME|8a250439161f4d19bed555836528aab87bfa1be0|76b28f47f9d4dfae7131e7ca552a1fe3f40aa4c5
+vendor/lib/libcodec2_vpp_qt_plugin.so|8736c29f1724edc479d2881da7f771e17e3a7e7f|88eb00d96cd8220993b99a9939b368eeba9b27f0
+vendor/lib/libcodec2_vpp_rs_plugin.so|b1e02c2c8c3a5159b40cd71784569803f28b33b2|e573f6804b2810fba77633ab2e669ac0b1772329
+vendor/lib/libformatter.so:vendor/lib/libformatter_mtk.so;FIX_SONAME|63216b142b817ad6f27e1aed1a9cb1d15fc44402|80ed69103f4de533b204706e7da2d71e4be90c47
+vendor/lib/libmp3dec_mtk.so|cf873a09213696ae6b12866bcf0bc3282c14fd26
+vendor/lib/libsfplugin_ccodec_utils.so:vendor/lib/libsfplugin_ccodec_utils-v31.so;FIX_SONAME|b72e40b715d884e0545036b3818ba0668cb56367|879cc2c8de829028055acf9dafb6c3b3b82f8a36
 
 # Media (JPEG)
 vendor/lib/libjpeg-alpha_vendor.so
@@ -377,31 +378,27 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
-# Media (VPU)
-vendor/lib/AVCSecureVdecCA.so
-vendor/lib/libgamehdr.so
-vendor/lib/libh264dec_customize.so
-vendor/lib/libh264dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libh264dec_sd.ca7.so;DISABLE_CHECKELF
-vendor/lib/libh264dec_se.ca7.so;DISABLE_CHECKELF
-vendor/lib/libh264enc_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libhdrvideo.so
-vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
-vendor/lib/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
-vendor/lib/libmp4enc_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libmp4enc_xa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libthha.so;DISABLE_CHECKELF
-vendor/lib/libvc1dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
-vendor/lib/libvcodec_utility.so
-vendor/lib/libvcodecdrv_header_stub.so
-vendor/lib/libvcodecdrv.so
-vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libvpu5.so
-vendor/lib64/libvcodec_oal.so;DISABLE_CHECKELF
-vendor/lib64/libvcodec_utility.so
-vendor/lib64/libvcodecdrv_header_stub.so
+# Media (VPU) - from iku A25 SP1A.210812.016 mp1V15240
+vendor/lib/libh264dec_customize.so|e85ef1978db37d370d0b7f3f497d8f09eb8d0578
+vendor/lib/libh264dec_sa.ca7.so;DISABLE_CHECKELF|81c944c3d830ddf0d2d002b3ce4eadd34556a5af
+vendor/lib/libh264dec_sd.ca7.so;DISABLE_CHECKELF|a84beb3d6ed6c06c1be1490bd4618a613b0e290b
+vendor/lib/libh264dec_se.ca7.so;DISABLE_CHECKELF|a7c92c80a2c247d1ad9943164a1e43966f6c6303
+vendor/lib/libh264enc_sa.ca7.so;DISABLE_CHECKELF|b0d84268ac514f7a6acee48915eb907cf2b3d6c0
+vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF|b2ff7a679d1adea1e453d40a27ceede03efcbec4
+vendor/lib/libhevce_sb.ca7.android.so;DISABLE_CHECKELF|3448542ca4ce04a8c1146a69dce4d7aa465de917
+vendor/lib/libmp4enc_sa.ca7.so;DISABLE_CHECKELF|ee1698c82673b7639aa6f975a7a1e72d2907b1fd
+vendor/lib/libmp4enc_xa.ca7.so;DISABLE_CHECKELF|241ebc3dca5bec2e1fc307cb3f151d22cdc31223
+vendor/lib/libthha.so;DISABLE_CHECKELF|b40680e3f405e5fc4928e8f38c877feffbd9233e
+vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF|ca61fa2c20c1e2d2a2a76fd5dce5f0e994ab0f75
+vendor/lib/libvcodec_utility.so|c8ed70ddf4b225878fd3df5482ea0147ec5be164
+vendor/lib/libvcodecdrv_header_stub.so|5815adb3b71255aa79909184367ac69af4fd4c28
+vendor/lib/libvcodecdrv.so|5aa33e16cb2953eafc61a0fbd1a9fdbb3e824444
+vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF|0283ee50aabc1230f55188cfa0ef8ed47e7f89f8
+vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF|1e87f15a15ec1e6c777bccbef5a714db15ceabd5
+vendor/lib/libvpu5.so|d6a8eb6b4340c1d7cb8015095e890bcd7e252b33
+vendor/lib64/libvcodec_oal.so;DISABLE_CHECKELF|da1998afa24673382dfe93dbce139d332f6fc1d2
+vendor/lib64/libvcodec_utility.so|9b9c1fd9e864c1b7a93fa10e16ab8329daa10d90
+vendor/lib64/libvcodecdrv_header_stub.so|ff059fd6537fe1bc27de361953d08d905a5896c2
 
 # NVRAM
 vendor/lib/libconnfem.so
