@@ -314,6 +314,9 @@ vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libDR.so
 vendor/lib64/libmnl.so:vendor/lib64/libmnl_mtk.so;FIX_SONAME
 
+# GNSS (LPPe) - from Pacman B4.1-260813-0941
+system_ext/priv-app/LPPeService/LPPeService.apk|41c9acfb2031aa536784ee12a861ab01f7a6ec36
+
 # ION
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
