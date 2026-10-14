@@ -7,3 +7,7 @@ on charger
     restorecon_recursive /mnt/vendor/nvcfg
 
     start fuelgauged
+
+    # Turn backlight on and switch to backlight trigger
+    write /sys/class/leds/lcd-backlight/brightness "512"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
